@@ -29,15 +29,17 @@ camera.position.y = 10;
 
 camera.rotation.set(degToRad(-50), 0, 0);
 
-function animate( stamp = 0) {
+function animate(stamp = 0) {
+  requestAnimationFrame(animate);
+  phy.doStep(stamp); // only need for non worker version
   renderer.render(scene, camera);
 }
 renderer.setAnimationLoop(animate);
 
 phy.init({
   type: "HAVOK",
-  worker: true,
-  compact: true,
+  worker: false,
+  compact: false,
   scene: scene,
   renderer: renderer,
   callback: physicsReady,
@@ -55,6 +57,6 @@ function physicsReady() {
     density: 2,
     size: [2, 2, 2],
     pos: [0, 10, 0],
-    visible: true
-  })
+    visible: true,
+  });
 }
