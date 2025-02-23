@@ -12,10 +12,20 @@
   </head>
   <body>
     <script type="module" src="/main.js"></script>
+    <script type="module" src="/ui.js"></script>
     <main>
+      <h1>Welcome to physics simulator!!!</h1>
+      <p>
+        A place where you can drop rigid bodies unto a plane,
+        <strong>fun!!!</strong>
+      </p>
       <menu>
-        <h1>Welcome to box dropping simulator!!!</h1>
+        <li><button id="sphere">Drop Sphere</button></li>
+        <li><button id="box">Drop Box</button></li>
       </menu>
+      <footer>
+        <p>Made using <a href="https://threejs.org/">three.js</a> and <a href="https://github.com/lo-th/phy?tab=readme-ov-file">phy</a></p>
+      </footer>
     </main>
   </body>
 </html>
