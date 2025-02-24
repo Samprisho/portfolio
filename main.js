@@ -30,7 +30,6 @@ camera.position.y = 10;
 camera.rotation.set(degToRad(-50), 0, 0);
 
 function animate(stamp = 0) {
-  requestAnimationFrame(animate);
   phy.doStep(stamp); // only need for non worker version
   renderer.render(scene, camera);
 }
@@ -39,7 +38,7 @@ renderer.setAnimationLoop(animate);
 phy.init({
   type: "HAVOK",
   worker: false,
-  compact: false,
+  compact: true,
   scene: scene,
   renderer: renderer,
   callback: physicsReady,
