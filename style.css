@@ -1,0 +1,104 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+  padding: 1em;
+}
+
+p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  padding: 1em 10%;
+  background-color: beige;
+}
+
+main {
+  border-radius: 1em;
+  border: 1em solid palegoldenrod;
+}
+article {
+  border: 0.2em solid darkgoldenrod;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header > nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+header > nav > * {
+  padding: 1em;
+}
+
+article section {
+  justify-content: space-between;
+  padding: 1em;
+  text-align: center;
+}
+
+#splash {
+  display: flex;
+  align-content: center;
+  padding: 0;
+
+  background-color: paleturquoise;
+}
+
+#splash > subsection {
+  padding: 1em;
+  align-content: center;
+}
+
+#intro {
+  padding: 1em;
+  background-color: palegoldenrod;
+}
+
+#talents {
+  background-color: antiquewhite;
+}
+
+#talents > subsection {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+#projects {
+  background-color: palegreen;
+}
+
+.showcase {
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase img {
+  margin-bottom: 1em;
+  border-radius: 1em;
+  border: 0.2em solid mediumseagreen;
+}
