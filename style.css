@@ -42,9 +42,6 @@ main {
   border-radius: 1em;
   border: 1em solid palegoldenrod;
 }
-article {
-  border: 0.2em solid darkgoldenrod;
-}
 
 header {
   display: flex;
@@ -61,7 +58,7 @@ header > nav > * {
   padding: 1em;
 }
 
-article section {
+main section {
   justify-content: space-between;
   padding: 1em;
   text-align: center;
@@ -75,7 +72,7 @@ article section {
   background-color: paleturquoise;
 }
 
-#splash > subsection {
+#splash > div {
   padding: 1em;
   align-content: center;
 }
@@ -89,7 +86,7 @@ article section {
   background-color: antiquewhite;
 }
 
-#talents > subsection {
+#talents > div {
   display: flex;
   align-content: space-around;
   justify-content: space-evenly;
