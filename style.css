@@ -1,37 +1,115 @@
-main {
-  position: absolute;
-  z-index: 100;
-  color: white;
-  display: flex;
-  flex-flow: column wrap;
-  margin-left: 2em;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/*
+    Name: Samuel Esho
+    Date:  24 February 2025
+    This is the style.css page for my portfolio of web development work.
+    It is used by all pages in my portfolio to give the site a consistent
+    look and feel.
+*/
 
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Courier New", Courier, monospace;
 }
 
-h1 {
-  border: 1em ridge rgb(161, 161, 255);
-  border-radius: 1em;
-
-  padding: 1rem;
+h2,
+h3 {
+  text-align: center;
+  margin: 0;
+  padding: 1em;
 }
 
-menu {
+p {
+  font-family: "Rubik", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+}
+
+ul {
   list-style-type: none;
-  padding: 0;
 }
 
-menu > * {
-  margin-bottom: 0.5em;
+body {
+  padding: 1em 10%;
+  background-color: beige;
 }
 
-button {
-  border: 0.4em ridge rgb(125, 125, 255);
+main {
   border-radius: 1em;
-  line-height: 2em;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: larger;
-  font-weight: bold;
-  background-color: rgb(10, 112, 116);
-  width: 10em;
+  border: 1em solid palegoldenrod;
+}
+article {
+  border: 0.2em solid darkgoldenrod;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header > nav {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+header > nav > * {
+  padding: 1em;
+}
+
+article section {
+  justify-content: space-between;
+  padding: 1em;
+  text-align: center;
+}
+
+#splash {
+  display: flex;
+  align-content: center;
+  padding: 0;
+
+  background-color: paleturquoise;
+}
+
+#splash > subsection {
+  padding: 1em;
+  align-content: center;
+}
+
+#intro {
+  padding: 1em;
+  background-color: palegoldenrod;
+}
+
+#talents {
+  background-color: antiquewhite;
+}
+
+#talents > subsection {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-evenly;
+}
+
+#projects {
+  background-color: palegreen;
+}
+
+.showcase {
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase img {
+  margin-bottom: 1em;
+  border-radius: 1em;
+  border: 0.2em solid mediumseagreen;
 }
